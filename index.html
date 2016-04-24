@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Paint</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <style>
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      body {
+        background: #121212;
+      }
+      #canvas,
+      #canvas_background {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      #canvas_background {
+        width: 500px;
+        height: 400px;
+        background: #fff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="canvas_background">
+      <canvas id="canvas"></canvas>
+    </div>
+
+    <input type="button" id="clear_button" value="Effacer">
+    <input type="color" id="color_button">
+    <script src="main.js"></script>
+  </body>
+</html>
